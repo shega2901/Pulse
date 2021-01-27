@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'family-name';
+    src: local('family-name'), url('') format('woff2'), url('') format('woff');
+    font-weight: ;
+    font-style: ;
+}
