@@ -1,0 +1,12 @@
+.consultation {
+    min-height: 680px;
+    padding: 86px 0 86px 0;
+    background: url(../img/consultation.jpg) center (center/cover) no-repeat;
+    &__desc {
+        margin-top: 35px;
+        color: #FFFFFF;
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
