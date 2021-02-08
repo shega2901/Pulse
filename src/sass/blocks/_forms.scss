@@ -5,11 +5,15 @@
     width: 300px;
     input {
         height: 50px;
-        border-radius: 0px;
+        font-weight: 300;
+        font-size: 14px;
+        border: none;
+        color: #2b2b2b;
         background-color: #fff;
         margin-bottom: 17px;
-        &:last-child {
-            margin-bottom: 20px;
+        padding: 0 20px 0 20px;
+        &:last-of-type {
+            margin-bottom: 25px;
         }
     }
 }

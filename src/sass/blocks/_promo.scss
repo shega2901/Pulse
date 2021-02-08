@@ -1,7 +1,7 @@
 .promo {
-    min-height: 650px;
+    max-height: 650px;
     padding: 21px 0 84px 0;
-    background: url(../img/main.jpg) center (center/cover) no-repeat;
+    background: url(../img/main.jpg) center center/cover no-repeat;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -23,6 +23,9 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 0;
+    }
+    &__icons_size574 {
+        display: none;
     }
     &__icons {
         margin-top: 72px;
