@@ -1,32 +1,89 @@
-.carousel {
-    padding: 80px 0;
-    &__inner {
-        position: relative;
-        width: 750px;
-        margin: 0 auto;
-    }
-    .slick-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -80px;
-        border: none;
-        background-color: #fff;
-        img {
-            width: 31px;
-            height: 50px;
+    // slick
+    // .carousel {
+    //     padding: 80px 0;
+    //     &__inner {
+    //         position: relative;
+    //         width: 750px;
+    //         margin: 0 auto;
+    //     }
+    //     .slick-prev {
+    //         position: absolute;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         left: -80px;
+    //         border: none;
+    //         background-color: #fff;
+    //         img {
+    //             width: 31px;
+    //             height: 50px;
+    //         }
+    //     }
+    //     .slick-next {
+    //         position: absolute;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+    //         right: -80px;
+    //         border: none;
+    //         background-color: #fff;
+    //         img {
+    //             width: 31px;
+    //             height: 50px;
+    //         }
+    //     }
+    // }
+    // /slick
+    // 
+    // tiny-slider
+    .carousel {
+        width: 100%;
+        padding: 80px 0;
+        .container {
+            position: relative;
+            &__inner {
+                width: 100%;
+                position: relative;
+                width: 750px;
+                margin: 0 auto;
+            }
+            .tns-item img {
+                display: block;
+                margin: 0 auto;
+            }
+            .prev,
+            .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -80px;
+                border: none;
+                background-color: #fff;
+                img {
+                    width: 31px;
+                    height: 50px;
+                }
+            }
+            .next {
+                right: -80px;
+                left: auto;
+            }
+            .tns-nav {
+                position: absolute;
+                left: 50%;
+                top: 760px;
+                button {
+                    background-color: red;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    margin-right: 5px;
+                }
+                &-active {
+                    background-color: blue;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
         }
     }
-    .slick-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -80px;
-        border: none;
-        background-color: #fff;
-        img {
-            width: 31px;
-            height: 50px;
-        }
-    }
-}
+    
+    // /tiny-slider

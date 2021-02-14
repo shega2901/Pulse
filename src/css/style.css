@@ -393,16 +393,28 @@
 }
 
 .carousel {
+  width: 100%;
   padding: 80px 0;
 }
 
-.carousel__inner {
+.carousel .container {
+  position: relative;
+}
+
+.carousel .container__inner {
+  width: 100%;
   position: relative;
   width: 750px;
   margin: 0 auto;
 }
 
-.carousel .slick-prev {
+.carousel .container .tns-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel .container .prev,
+.carousel .container .next {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -412,23 +424,34 @@
   background-color: #fff;
 }
 
-.carousel .slick-prev img {
+.carousel .container .prev img,
+.carousel .container .next img {
   width: 31px;
   height: 50px;
 }
 
-.carousel .slick-next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+.carousel .container .next {
   right: -80px;
-  border: none;
-  background-color: #fff;
+  left: auto;
 }
 
-.carousel .slick-next img {
-  width: 31px;
-  height: 50px;
+.carousel .container .tns-nav {
+  position: absolute;
+  left: 50%;
+  top: 760px;
+}
+
+.carousel .container .tns-nav button {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.carousel .container .tns-nav-active {
+  background-color: blue;
+  width: 15px;
+  height: 15px;
 }
 /*# sourceMappingURL=style.css.map */
