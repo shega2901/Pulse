@@ -102,12 +102,70 @@
         width: 100%;
         .container {
             width: 100%;
-            &__inner {
+            padding: 0;
+        }
+        &__inner {
+            width: 100%;
+            img {
                 width: 100%;
-                img {
-                    width: 100%;
-                }
             }
+        }
+        .prev,
+        .next {
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            img {
+                height: 30px;
+                opacity: 0.5;
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        .next {
+            right: 0px;
+            left: auto;
+        }
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &__tab {
+            font-size: 12px;
+        }
+        .title {
+            margin-bottom: 0px;
+        }
+        &__content {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .reviews {
+        &__person {
+            img {
+                display: none;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            height: 170px;
+            padding: 10px;
+            width: 100%;
+        }
+        &__addr {
+            // line-height: normal;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &__tel {
+            margin-bottom: 15px;
+        }
+        &__social {
+            padding: 0 80px 0 80px;
         }
     }
 }

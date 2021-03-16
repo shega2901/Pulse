@@ -1,0 +1,36 @@
+.reviews {
+    .title {
+        margin-bottom: 50px;
+    }
+    &__persons {
+        display: flex;
+        flex-direction: column;
+    }
+    &__person {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+        &__photo {
+            width: 50%;
+            height: 50%;
+            margin-right: 60px;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        &__maraton {
+            font-weight: 300;
+            font-size: 14px;
+            color: #ACACAC;
+            margin-bottom: 5px;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 16px;
+            margin-bottom: 0;
+            line-height: 19px;
+        }
+    }
+}

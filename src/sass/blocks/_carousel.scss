@@ -39,49 +39,55 @@
         padding: 80px 0;
         .container {
             position: relative;
-            &__inner {
-                width: 100%;
-                position: relative;
-                width: 750px;
-                margin: 0 auto;
+        }
+        &__inner {
+            width: 100%;
+            position: relative;
+            width: 750px;
+            margin: 0 auto;
+        }
+        .tns-item img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -80px;
+            // left: 0;
+            border: none;
+            background-color: rgba(0, 0, 0, 0);
+            img {
+                width: auto;
+                height: 50px;
             }
-            .tns-item img {
-                display: block;
-                margin: 0 auto;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
             }
-            .prev,
-            .next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -80px;
-                border: none;
-                background-color: #fff;
-                img {
-                    width: 31px;
-                    height: 50px;
-                }
+        }
+        .next {
+            right: -80px;
+            transform: translateY(-50%);
+            left: auto;
+        }
+        .tns-nav {
+            position: absolute;
+            left: 50%;
+            top: 760px;
+            button {
+                background-color: red;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin-right: 5px;
             }
-            .next {
-                right: -80px;
-                left: auto;
-            }
-            .tns-nav {
-                position: absolute;
-                left: 50%;
-                top: 760px;
-                button {
-                    background-color: red;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 100%;
-                    margin-right: 5px;
-                }
-                &-active {
-                    background-color: blue;
-                    width: 15px;
-                    height: 15px;
-                }
+            &-active {
+                background-color: blue;
+                width: 15px;
+                height: 15px;
             }
         }
     }

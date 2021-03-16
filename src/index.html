@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href='#' class="header__logo">
@@ -31,7 +31,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href='tel:+74999228974' class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">Request a call</button>
+                    <button data-modal="consultation" class="button">Request a call</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -59,7 +59,7 @@
                         We will answer all questions
                     </li>
                 </ul>
-                <button class="button button_main">
+                <button data-modal="consultation" class="button button_main">
                     order a CONSULTATION
                 </button>
                 <div class="promo__link">
@@ -102,9 +102,11 @@
             <div class="consultation__desc">
                 Fill out the application form and we<br>will call you back within 10 minutes
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Your name" type="text">
-                <input name="phone" required placeholder="Your phone" type="number">
+                <input name="phone" required placeholder="Your phone">
+                <!-- <input name="phone" required placeholder="Your phone" type="number">  -->
+                <!-- for plugin  jquery.maskedinput.min.js type="number"  don't use-->
                 <input name="email" required placeholder="Your E-mail" type="email">
                 <button class="button button_submit">order a CONSULTATION</button>
             </form>
@@ -162,14 +164,14 @@
             </ul>
             <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
-                    <div class="catalog-item__wrapper ">
+                    <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="../src/img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
                             <div class="catalog-item__subtitle">Pulsometer Polar FT1</div>
                             <div class="catalog-item__descr">For the first steps in heart rate training</div>
                             <a href="#" class="catalog-item__link">detail</a>
                         </div>
-                        <ul class="catalog-item__list ">
+                        <ul class="catalog-item__list">
                             <li>You will hear a sound notification about the desired heart rate during training;</li>
                             <li>You will see an informative graphical indicator of target training heart rate zones;</li>
                             <li>You will also see information about calorie consumption per workout;</li>
@@ -393,10 +395,100 @@
             </div>
         </div>
     </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="title">customer reviews</h2>
+            <div class="reviews__persons">
+                <div class="reviews__person">
+                    <img src="/src/img/feed_1.png" alt="feed_1" class="reviews__person__photo">
+                    <div>
+                        <p class="reviews__person__name">Irina Ivanchenko</p>
+                        <p class="reviews__person__maraton">2 half marathons</p>
+                        <p class="reviews__person__text">I didn't know what to buy myself - I turned to the guys from RunSmart - they picked up a heart rate monitor that suited my goals and financial capabilities. After a while, I decided to update the gadget - without hesitation I turned
+                            to the same place.
+                            <br><br> New targets - new gadget!
+                            <br><br> Thank RunSmart!</p>
+                    </div>
+                </div>
+                <div class="reviews__person">
+                    <img src="/src/img/feed_2.png" alt="feed_2" class="reviews__person__photo">
+                    <div>
+                        <p class="reviews__person__name">Ivan Semochkin</p>
+                        <p class="reviews__person__maraton">1 half marathons</p>
+                        <p class="reviews__person__text">Cool thing is a heart rate monitor. Usually I ran without them. It turns out that I only did worse for myself.<br>I bought a heart rate monitor and received a training session as a gift. We had the first training session with me,
+                            taught me how to use a new gadget. They also explained the basics of anatomy, made a training plan for the month ahead.<br><br>With them I prepared for my first half marathon! Thank you!!!</p>
+                    </div>
+                </div>
+                <div class="reviews__person">
+                    <img src="/src/img/feed_3.png" alt="feed_3" class="reviews__person__photo">
+                    <div>
+                        <p class="reviews__person__name">Yulia Dashkina</p>
+                        <p class="reviews__person__maraton">2 half marathons</p>
+                        <p class="reviews__person__text">For a long time I could not start running, because before that I started several times, but it became hard and I quit. I heard from friends about RunSmart and running with heart rate control and decided to give it a try.<br><br>I
+                            called, the guys asked about my goals and picked up a very interesting option with a discount! Now I run and enjoy running! I have already run 2 half marathons and several shorter races and does not intend to stop!<br><br>Thank
+                            you!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4064147965555!2d37.64509221606044!3d55.76881299822436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6342a6010d%3A0x6b0f4771a8aa70a2!2sMyasnitskiy%20Proyezd%2C%203%2C%20Moskva%2C%20Russia%2C%20107078!5e0!3m2!1sen!2sil!4v1613841017494!5m2!1sen!2sil"
+            width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="footer__info">
+            <address class="footer__addr">Moscow, Myasnitsky proezd, 3</address>
+            <a class="footer__tel" href="tel:84999228974">8 (499) 922-89-74 </a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instragram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed-form" action="#">
+                <input name="name" placeholder="Your name" type="text">
+                <input name="phone" placeholder="Your phone">
+                <!-- <input name="phone" required placeholder="Your phone" type="number">  -->
+                <!-- for plugin  jquery.maskedinput.min.js type="number"  don't use-->
+                <input name="email" placeholder="Your E-mail" type="email">
+                <button class="button button_submit">order a CONSULTATION</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr">Pulsometer Polar FT1 </div>
+            <form class="feed-form" action="#">
+                <input name="name" required placeholder="Your name" type="text">
+                <input name="phone" required placeholder="Your phone">
+                <!-- <input name="phone" required placeholder="Your phone" type="number">  -->
+                <!-- for plugin  jquery.maskedinput.min.js type="number"  don't use-->
+                <input name="email" required placeholder="Your E-mail" type="email">
+                <button class="button button_submit">BUY</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thanks for your application!</div>
+            <div class="modal__descr">Our manager will contact you <br>in the near future!</div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up-arrow.svg" alt="up">
+    </a>
 
     <!-- slick -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <!-- <script src="js/slick.min.js"></script>
     <script src="js/script-slick.js"></script> -->
     <!-- /slick -->
